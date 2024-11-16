@@ -4421,17 +4421,18 @@ i {
     padding: 10px;
     width: 50px;
     height: 50px;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background: var(--Gradient, linear-gradient(97deg, #2DAAC1 9.51%, #54D0E7 93.74%));
-    color: #fff;
+    border-radius: 8px;
+    background: #1A5E81;
+    color: var(--White-Normal, #FEFEFE);
 }
 
-.scrollToTop i {
-    transform: rotate(-45deg);
+.scrollToTop:hover .icon {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 /*=========================================================================================
@@ -4519,7 +4520,7 @@ i {
 .dropdown-menu {
     position: relative;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     background-color: #DCF5EA;
     margin-top: 15px !important;
     border: none;
@@ -4582,9 +4583,15 @@ i {
     padding-bottom: 130px;
 }
 
+.fe-hero-content-box {
+    display: flex;
+    align-items: center;
+}
+
 .hero-bg-1 {
     position: absolute;
     width: 100%;
+    height: 100%;
 }
 
 .hero-content-box .fe-section-title .fe-content-text-2 .line {
@@ -4656,7 +4663,7 @@ i {
 
 .fe-enable-it-img-box .star-icon-1 {
     position: absolute;
-    right: 208px;
+    left: 324px;
 }
 
 .fe-enable-it-img-box .star-icon-2 {
@@ -4780,7 +4787,7 @@ i {
 
 
 /*=========================================================================================
-    Growth Section CSS End
+    Growth Section CSS Start
  ==========================================================================================*/
 .fe-growth {
     background: #FAFAFA;
@@ -4808,6 +4815,12 @@ i {
     max-width: 504px;
     height: 558px;
 }
+
+/*=========================================================================================
+    Growth Section CSS End
+ ==========================================================================================*/
+
+
 
 /*=========================================================================================
     Articles Section CSS Start
@@ -4844,6 +4857,12 @@ i {
     font-weight: 600;
     line-height: 140%;
     margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
 }
 
 .fe-single-articles .title:hover {
@@ -4860,23 +4879,164 @@ i {
     margin-bottom: 24px;
 }
 
-.fe-single-articles {}
-
-
 /*=========================================================================================
     Articles Section CSS End
  ==========================================================================================*/
 
+
+
 /*=========================================================================================
-    Growth Section CSS End
+    Contact Form Section CSS Start
  ==========================================================================================*/
+.fe-contact {
+    background: #FAFAFA;
+}
+
+.fe-contact-info-box .single-contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fe-contact-info-box .single-contact .icon-box {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.fe-contact-info-box .single-contact .icon-box.bg-1 {
+    background: #F7E0FF;
+}
+
+.fe-contact-info-box .single-contact .icon-box.bg-2 {
+    background: #FFE2E3;
+}
+
+.fe-contact-info-box .single-contact .icon-box.bg-3 {
+    background: #E0E9FD;
+}
+
+.fe-contact-info-box .single-contact .icon-box .icon {
+    font-size: 34px;
+}
+
+.fe-contact-info-box .single-contact p {
+    color: #777;
+}
+
+.fe-contact-form-box .single-input label {
+    color: var(--Black-Normal, #1B1213);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.fe-contact-form-box .single-input input,
+.fe-contact-form-box .single-input textarea {
+    color: #979797;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 0.5px solid #E4E4E4;
+    background: var(--White-Light, #FFF);
+    outline-color: #1A5E81;
+}
+
+/*=========================================================================================
+    Contact Form Section CSS End
+ ==========================================================================================*/
+
 
 
 /*=========================================================================================
     Footer Section CSS Start
  ==========================================================================================*/
-.fc-footer {
+.fe-footer {
     background: var(--Black-Normal, #1B1213);
+}
+
+.fe-footer-content-box {
+    padding-bottom: 50px;
+}
+
+.fe-footer-menu img {
+    max-width: 283px;
+}
+
+.fe-footer-menu p {
+    margin: 16px 0px;
+    color: var(--Violet-Light, #FDEBFD);
+    font-size: 18px;
+}
+
+.fe-footer-menu .icon-menu {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.fe-footer-menu .icon-menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #1A5E81;
+}
+
+.fe-footer-menu .icon-menu li a:hover {
+    background: #1A5E81;
+    color: #FFF;
+    transition: .3s ease-in-out 0s;
+}
+
+.fe-footer-menu .menu-category {
+    color: var(--White-Light, #FFF);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    margin-bottom: 24px;
+}
+
+.fe-footer-menu .menu-list li a {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--Violet-Light, #FDEBFD);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.fe-footer-menu .menu-list li a:hover {
+    font-weight: 600;
+    transition: .3s ease-in-out 0s;
+
+}
+
+.fe-copyright-box {
+    padding: 14px 10px;
+    background: #1A5E81;
+}
+
+.fe-copyright-box .fe-content-text-1 {
+    color: var(--White-Normal, #FEFEFE);
+    text-align: center;
 }
 
 /*=========================================================================================

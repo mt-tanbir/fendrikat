@@ -1,6 +1,10 @@
 @media screen and (max-width: 1440px) {}
 
-@media screen and (max-width: 1367px) {}
+@media screen and (max-width: 1367px) {
+    .fe-section-title h1 {
+        font-size: 54px;
+    }
+}
 
 @media screen and (max-width: 1280px) {}
 
@@ -15,6 +19,10 @@
 
     .fe-navbar .btn-p2 {
         padding: 14px 28px;
+    }
+
+    .fe-section-title h1 {
+        font-size: 48px;
     }
 }
 
