@@ -4,27 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FastClean | Home 2</title>
+    <title>FRANKENDRIKAT | Home 2</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <!-- Urbanist Google Font -->
+    <!-- HK Grotesk Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- Flaticon-->
-    <link rel="stylesheet" href="assets/css/fonts/flaticon_mycollection.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Meanmenu CSS -->
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
     <!-- Slick Slider -->
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <!-- AOS CSS -->
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <!-- Xzoom -->
-    <link rel="stylesheet" href="assets/css/xzoom.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive CSS -->
@@ -32,407 +28,100 @@
 </head>
 
 <body>
-    <!-- Header 2 Section Start -->
-    <header id="header" class="header header-2 cr-border-bottom">
-        <div class="fc-nav-2">
-            <div class="container d-none d-lg-block">
-                <div class="header-inner-2">
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo-1.png" alt="Site logo">
-                    </a>
-                    <nav class="mainmenu" style="display: block;">
-                        <ul class="menu-list">
-                            <li class="cr-dropdown">
-                                <a class="active" href="#">Home <i class="flaticon-arrow-down-sign-to-navigate"></i>
+    <!-- Header 1 Section Start -->
+    <header id="header" class="header">
+        <div class="header-area">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg fe-navbar">
+                    <a class="navbar-brand d-flex align-items-center" href="index-2.html">
+                        <img src="assets/images/fe-logo-01.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <!-- Home Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
                                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="index.html">Home One</a>
-                                    </li>
-                                    <li>
-                                        <a class="active" href="index-2.html">Home Two</a>
-                                    </li>
+                                <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                                    <li><a class="dropdown-item border-bottom" href="index.html">Home 1</a></li>
+                                    <li><a class="dropdown-item active" href="index-2.html">Home 2</a></li>
                                 </ul>
                             </li>
-                            <li class="cr-dropdown">
-                                <a href="about.html">About</a>
+                            <!-- Other Navbar Items -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-me.html">About Me</a>
                             </li>
-                            <li class="cr-dropdown">
-                                <a href="service.html">Service</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="it-leadership.html">IT Leadership</a>
                             </li>
-                            <li class="cr-dropdown">
-                                <a href="#">Pages <i class="flaticon-arrow-down-sign-to-navigate"></i></a>
-                                <ul>
-                                    <li>
-                                        <a href="project.html">Our Projects</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="businessDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    IT Driving Business Success
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="businessDropdown">
+                                    <li><a class="dropdown-item border-bottom"
+                                            href="it-driving-business-success.html">IT Driving Business Success</a>
                                     </li>
-                                    <li>
-                                        <a href="project-details.html">Project Details</a>
-                                    </li>
-                                    <li>
-                                        <a href="price-plan.html">Price Plan</a>
-                                    </li>
-                                    <li>
-                                        <a href="get-quote.html">Get a Quote</a>
-                                    </li>
-                                    <li>
-                                        <a href="service-details.html">Service Details</a>
-                                    </li>
-                                    <li>
-                                        <a href="our-team.html">Our Team</a>
-                                    </li>
-                                    <li>
-                                        <a href="testimonial.html">Testimonials</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-details.html">Blog Details</a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="error.html">Error</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="it-success.html">IT Success</a></li>
                                 </ul>
                             </li>
-                            <li class="cr-dropdown last-element">
-                                <a href="contact.html">Contact</a>
-                            </li>
-                            <li class="cr-dropdown d-lg-none d-block">
-                                <a href="get-quote.html">Get a Quote</a>
+                            <li class="nav-item d-lg-none">
+                                <a href="#fe-contact" class="btn btn-p2 regular-btn">Contact Me</a>
                             </li>
                         </ul>
-                    </nav>
-
-                    <div class="fc-header-button d-lg-block d-none">
-                        <a href="get-quote.html" class="btn regular-btn" role="button">Get a Quote</a>
                     </div>
-                </div>
-            </div>
-            <div class="mobile-menu-wrap d-block d-lg-none">
-                <div class="container">
-                    <div class="mobile-menu mobile-menu-2">
-                        <div class="fc-mobile-menu">
-                            <a href="index.html" class="mobile-logo">
-                                <img src="assets/images/logo-1.png" alt="logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    <a href="#fe-contact" class="btn btn-p2 regular-btn d-none d-lg-block">Contact Me</a>
+                </nav>
             </div>
         </div>
     </header>
-    <!-- Header 2 Section End -->
+    <!-- Header 1 Section End -->
 
 
 
-    <!-- Hero 2 Section Start -->
-    <div id="fc-hero-2" class="fc-hero-2">
-        <div class="fc-hero-2-area">
-            <img class="fc-hero-2-bg" src="assets/images/hero-bg-2.png" alt="Hero Background">
+    <!-- Hero 1 Section Start -->
+    <div id="hero-1" class="hero-1">
+        <div class="hero-area-1">
+            <img class="hero-bg-1" src="assets/images/hero-bg-02.png" alt="Hero Bg">
             <div class="container">
-                <div class="fc-hero-2-content" data-aos="fade-right">
-                    <h1>Quality cleaning for your home</h1>
-                    <p>Simple steps for a clean and healthy environment. We provide a wide range of services for the
-                        cleanliness and comfort of your home.</p>
-                    <div class="btn-wrapper">
-                        <a class="btn btn-l regular-btn" href="service.html">View All Service</a>
-                        <div class="fc-contact-box">
-                            <i class="flaticon-call"></i>
-                            <div>
-                                <p class="text">Call Us Now.</p>
-                                <p class="number">(414) 567 - 2109</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Hero 2 Section End -->
-
-
-
-    <!-- Service 2 Section Start -->
-    <div id="fc-service-2" class="fc-service-2 section-pb">
-        <div class="fc-service-area-2">
-            <div class="container">
-                <div class="fc-service-1-content">
-                    <div class="fc-section-title" >
-                        <h3>Our Regular Services</h3>
-                        <a class="btn btn-l regular-btn" href="service.html">View All Service</a>
-                    </div>
+                <div class="hero-content-box">
                     <div class="row">
-                        <div class="col-lg-4 mb-4" data-aos="fade-up">
-                            <div class="fc-single-service fc-single-service-2 color-1">
-                                <div class="service-icon"><img src="assets/images/icons/service-icon-4.svg"
-                                        alt="service icon"></div>
-                                <h5 class="fc-single-title">House cleaning</h5>
-                                <p class="text-center fc-content-text-2">Home cleaning service options and continue to
-                                    lead by example, leaving other cleaning companies.</p>
-                                <a class="learn-btn" href="service-details.html">Learn More <i
-                                        class="flaticon-next"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4" data-aos="fade-up">
-                            <div class="fc-single-service fc-single-service-2 color-2">
-                                <div class="service-icon"><img src="assets/images/icons/service-icon-5.svg"
-                                        alt="service icon"></div>
-                                <h5 class="fc-single-title">Office cleaning</h5>
-                                <p class="text-center fc-content-text-2">Home cleaning service options and continue to
-                                    lead by example, leaving other cleaning companies.</p>
-                                <a class="learn-btn" href="service-details.html">Learn More<i
-                                        class="flaticon-next"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4" data-aos="fade-up">
-                            <div class="fc-single-service fc-single-service-2 color-3">
-                                <div class="service-icon"><img src="assets/images/icons/service-icon-6.svg"
-                                        alt="service icon"></div>
-                                <h5 class="fc-single-title">Industrial cleaning</h5>
-                                <p class="text-center fc-content-text-2">Home cleaning service options and continue to
-                                    lead by example, leaving other cleaning companies.</p>
-                                <a class="learn-btn" href="service-details.html">Learn More<i
-                                        class="flaticon-next"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service 2 Section End -->
-
-
-
-    <!-- Choose us 2 Section Start -->
-    <div id="fc-choose-us-2" class="fc-choose-us-2 section-pb">
-        <div class="fc-choose-us-2-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 d-lg-block d-none" data-aos="fade-right">
-                        <div class="fc-chooseUs-2-imgbox">
-                            <div>
-                                <img class="element-1" src="assets/images/icons/choose-us-2-element.png"
-                                    alt="bg-element">
-                                <img class="element-2" src="assets/images/icons/choose-us-2-element-2.png"
-                                    alt="bg-element">
-                            </div>
-                            <img class="main-img" src="assets/images/choose-us-2.png" alt="Img">
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <div class="fc-chooseUs-2-content">
-                            <div class="fc-section-title">
-                                <h3>We cover all areas of your home or office</h3>
-                                <p class="fc-content-text-1">There are many variations of passages of Lorem Ipsum
-                                    available, but the majority have suffered alteration in some form, by injected
-                                    humor, or randomized words that don't look even slightly believable and going
-                                    through the cites of the word in classical literature.</p>
-                            </div>
-                            <div class="fc-chooseUs-2-imgbox d-block d-lg-none my-7">
-                                <div>
-                                    <img class="element-1" src="assets/images/icons/choose-us-2-element.png"
-                                        alt="bg-element">
-                                    <img class="element-2" src="assets/images/icons/choose-us-2-element-2.png"
-                                        alt="bg-element">
+                        <div class="col-lg-6 fe-hero-content-box">
+                            <div class="fe-section-title">
+                                <div class="fe-content-text-2 d-flex align-items-baseline gap-2">IT Solution<div
+                                        class="line"></div>
                                 </div>
-                                <img class="main-img" src="assets/images/choose-us-2.png" alt="Img">
-                            </div>
-                            <div class="fc-service-options">
-                                <ul>
-                                    <li class="single-option"><i class="flaticon-check-1"></i>Bathrooms</li>
-                                    <li class="single-option"><i class="flaticon-check-1"></i>Kitchens</li>
-                                    <li class="single-option"><i class="flaticon-check-1"></i>Living Rooms</li>
-                                </ul>
-                                <ul>
-                                    <li class="single-option"><i class="flaticon-check-1"></i>Bathrooms</li>
-                                    <li class="single-option"><i class="flaticon-check-1"></i>Windows</li>
-                                    <li class="single-option"><i class="flaticon-check-1"></i>Carpets</li>
-                                </ul>
-                            </div>
-                            <a class="btn btn-xl regular-btn" href="get-quote.html">Get a Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Choose us 2 Section End -->
-
-
-
-    <!-- Service Work 2 Section Start -->
-    <div id="fc-service-work-2" class="fc-service-work-2 section-pb">
-        <div class="fc-service-work-area">
-            <div class="container">
-                <div class="fc-service-work-title d-flex justify-content-center" data-aos="fade-down">
-                    <div class="fc-section-title mb-12">
-                        <h3 class="text-center mb-3">How our service works?</h3>
-                        <p class="fc-content-text-2 text-center">The Work Process defines required tools, systems, and
-                            resources as well as an organizational responsibility.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="fc-single-service-work fc-single-service-work-2">
-                            <div class="img-box">
-                                <img class="main-img" src="assets/images/icons/service-icon-7.svg" alt="Service">
-                            </div>
-                            <h5 class="fc-single-title">1. Easy Online Scheduling</h5>
-                            <p class="fc-content-text-2">Home cleaning service options and continue to lead by example,
-                                leaving cleaning.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="fc-single-service-work fc-single-service-work-2">
-                            <div class="img-box">
-                                <img class="main-img" src="assets/images/icons/service-icon-8.svg" alt="Service">
-                            </div>
-                            <h5 class="fc-single-title">2. Pay online easily</h5>
-                            <p class="fc-content-text-2">Home cleaning service options and continue to lead by example,
-                                leaving cleaning.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="fc-single-service-work fc-single-service-work-2">
-                            <div class="img-box">
-                                <img class="main-img" src="assets/images/icons/service-icon-9.png" alt="Service">
-                            </div>
-                            <h5 class="fc-single-title">3. Get your cleaned service</h5>
-                            <p class="fc-content-text-2">Home cleaning service options and continue to lead by example,
-                                leaving cleaning.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="fc-service-work-2-btn">
-                    <a class="btn btn-xl regular-btn" data-aos="fade-right" href="get-quote.html">Get a Quote</a>
-                    <a class="btn btn-xl third-btn" data-aos="fade-left" href="service.html">Explore Service</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service Work 2 Section End -->
-
-
-
-    <!-- Recent Project 2 Section Start -->
-    <div id="fc-recent-project" class="fc-recent-project section-pb">
-        <div class="fc-recent-project-area">
-            <div class="container">
-                <div class="fc-recent-project-content">
-                    <div class="fc-section-title" data-aos="fade-down">
-                        <h3>Our Recent Projects</h3>
-                        <div class="recent-project-nav slick-nav">
-                            <button class="slick-prev-3 prev"><i class="flaticon-left-arrow"></i></button>
-                            <button class="slick-next-3 next"><i class="flaticon-right-arrow"></i></button>
-                        </div>
-                    </div>
-                    <div class="recent-project-slider-2" data-aos="fade-up">
-                        <div class="single-recent-project-2">
-                            <img src="assets/images/recent-project-6.png" alt="Img">
-                            <div class="overlay-content">
-                                <p class="service-name">Office cleaning</p>
-                                <a class="details-btn" href="service-details.html">Read More<i
-                                        class="flaticon-up-right"></i></a>
+                                <h1>Driving Digital <span class="fe-oval-text">Success</span> Through Expert IT
+                                    Consulting</h1>
+                                <!-- Hero Resoinsive Image -->
+                                <div class="d-block d-lg-none my-7">
+                                    <div class="fe-hero-video-box">
+                                        <iframe src="https://www.youtube.com/embed/qDG9HxCCDb0?si=knLRJUZhgT2XhYpr"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <p class="fe-content-text-1">At the core of digital transformation lies the need for
+                                    expert guidance and strategic vision. My IT consulting services are designed to
+                                    propel your business</p>
+                                <a href="" class="btn btn-p1 regular-btn">Book Free Initial Consultation</a>
                             </div>
                         </div>
-                        <div class="single-recent-project-2">
-                            <img src="assets/images/recent-project-5.png" alt="Img">
-                            <div class="overlay-content">
-                                <p class="service-name">Office cleaning</p>
-                                <a class="details-btn" href="service-details.html">Read More<i
-                                        class="flaticon-up-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="single-recent-project-2">
-                            <img src="assets/images/recent-project-6.png" alt="Img">
-                            <div class="overlay-content">
-                                <p class="service-name">Office cleaning</p>
-                                <a class="details-btn" href="service-details.html">Read More<i
-                                        class="flaticon-up-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="single-recent-project-2">
-                            <img src="assets/images/recent-project-5.png" alt="Img">
-                            <div class="overlay-content">
-                                <p class="service-name">Office cleaning</p>
-                                <a class="details-btn" href="service-details.html">Read More<i
-                                        class="flaticon-up-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="single-recent-project-2">
-                            <img src="assets/images/recent-project-6.png" alt="Img">
-                            <div class="overlay-content">
-                                <p class="service-name">Office cleaning</p>
-                                <a class="details-btn" href="service-details.html">Read More<i
-                                        class="flaticon-up-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="single-recent-project-2">
-                            <img src="assets/images/recent-project-5.png" alt="Img">
-                            <div class="overlay-content">
-                                <p class="service-name">Office cleaning</p>
-                                <a class="details-btn" href="service-details.html">Read More<i
-                                        class="flaticon-up-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Recent Project 2 Section End -->
-
-
-    <!-- Different Facility Section Start -->
-    <div id="fc-different-facility" class="fc-different-facility">
-        <div class="fc-different-facility-area">
-            <div class="container">
-                <div class="fc-dif-facility-content-box">
-                    <div class="row">
                         <div class="col-lg-6">
-                            <div class="fc-dif-facility-content">
-                                <div class="fc-section-title">
-                                    <h3 class="mb-3">What makes us different?</h3>
-                                    <p class="fc-content-text-1">There are many variations of passages of Lorem Ipsum
-                                        available, but the majority have suffered alteration in some form, by injected
-                                        humor, or randomized words that don't look even slightly.</p>
-                                    <p class="fc-content-text-1">Suffered alteration in some form, by injected humor, or
-                                        randomized words that believable and going through the word literature.</p>
+                            <div class="d-none d-lg-block">
+                                <div class="fe-hero-video-box">
+                                    <iframe src="https://www.youtube.com/embed/qDG9HxCCDb0?si=knLRJUZhgT2XhYpr"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
-                                <div class="fc-def-fecility-img d-lg-none d-block my-7">
-                                    <img src="assets/images/different-facility-img.png" alt="Img">
-                                </div>
-                                <div class="fc-facility-menu">
-                                    <div class="fc-single-counter">
-                                        <div class="d-flex align-items-center ">
-                                            <div class="counterup-1">3000</div><span class="plus-icon">+</span>
-                                        </div>
-                                        <p class="text">Happy Clients</p>
-                                    </div>
-                                    <div class="fc-single-counter">
-                                        <div class="d-flex align-items-center ">
-                                            <div class="counterup-1">100</div><span class="plus-icon">+</span>
-                                        </div>
-                                        <p class="text">Employees</p>
-                                    </div>
-                                    <div class="fc-single-counter">
-                                        <div class="d-flex align-items-center ">
-                                            <div class="counterup-1">4500</div><span class="plus-icon">+</span>
-                                        </div>
-                                        <p class="text">Jobs Done</p>
-                                    </div>
-                                </div>
-                                <a class="btn btn-xl regular-btn" href="get-quote.html">Get a Quote</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 fc-def-fecility-img-box" data-aos="zoom-in">
-                            <div class="fc-def-fecility-img d-lg-block d-none">
-                                <img src="assets/images/different-facility-img.png" alt="Img">
                             </div>
                         </div>
                     </div>
@@ -440,402 +129,517 @@
             </div>
         </div>
     </div>
-    <!-- Different Facility Section End -->
+    <!-- Hero 1 Section End -->
 
 
 
-    <!-- Google Review 2 Section Start -->
-    <div id="fc-google-review-2" class="fc-google-review-2 section">
-        <div class="fc-google-review-area">
+    <!-- Enable IT Section Start -->
+    <div id="fe-enable-it" class="fe-enable-it section">
+        <div class="fe-enable-it-area">
             <div class="container">
-                <div class="fc-googleReview-content">
-                    <div class="fc-section-title" data-aos="fade-down">
-                        <div class="review-star">
-                            <span><i class="flaticon-star"></i></span>
-                            <span><i class="flaticon-star"></i></span>
-                            <span><i class="flaticon-star"></i></span>
-                            <span><i class="flaticon-star"></i></span>
-                            <span><i class="flaticon-star"></i></span>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="fe-enable-it-img-box">
+                            <!-- Star Icon -->
+                            <div class="star-icon-1"><img src="assets/images/icons/star-01.png" alt="Star"></div>
+                            <div class="star-icon-2"><img src="assets/images/icons/star-02.png" alt="Star"></div>
+
+                            <!-- Back Image -->
+                            <div class="back-image">
+                                <img src="assets/images/enable-it-01.png" alt="Image">
+                            </div>
+
+                            <!-- Front Image -->
+                            <div class="front-image">
+                                <img src="assets/images/enable-it-02.png" alt="Image">
+                            </div>
                         </div>
-                        <h3>5 out of 4.9 stars on Google Reviews</h3>
-                        <p class="fc-content-text-2">The Work Process defines required tools, systems, and resources an
-                            organizational.</p>
                     </div>
-                    <div class="fc-googleReview-slide-box" data-aos="fade-up">
-                        <div class="fc-googleReview-nav slick-nav">
-                            <button class="slick-prev-2 prev"><i class="flaticon-left-arrow"></i></button>
-                            <button class="slick-next-2 next"><i class="flaticon-right-arrow"></i></button>
-                        </div>
-                        <div class="fc-googleReview-slider-2">
-                            <div class="single-googleReview">
-                                <div class="client-info-box">
-                                    <div class="single-client">
-                                        <img src="assets/images/reviewer-img-1.png" alt="client Img">
-                                        <div>
-                                            <p class="client-name">Steven MC Quillen</p>
-                                            <div class="rating">
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <p>(5.0)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="assets/images/icons/google-icon.svg" alt="icon">
-                                </div>
-                                <p class="text">“Throughout my early career a developer and product haveing manager,
-                                    passionate, and customer-centric people to create customer experiences at the level
-                                    it can and should potential over histories digital”
-                                </p>
-                            </div>
-                            <div class="single-googleReview">
-                                <div class="client-info-box">
-                                    <div class="single-client">
-                                        <img src="assets/images/reviewer-img-1.png" alt="client Img">
-                                        <div>
-                                            <p class="client-name">Steven MC Quillen</p>
-                                            <div class="rating">
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <p>(5.0)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="assets/images/icons/google-icon.svg" alt="icon">
-                                </div>
-                                <p class="text">“Throughout my early career a developer and product haveing manager,
-                                    passionate, and customer-centric people to create customer experiences at the level
-                                    it can and should potential over histories digital”
-                                </p>
-                            </div>
-                            <div class="single-googleReview">
-                                <div class="client-info-box">
-                                    <div class="single-client">
-                                        <img src="assets/images/reviewer-img-1.png" alt="client Img">
-                                        <div>
-                                            <p class="client-name">Steven MC Quillen</p>
-                                            <div class="rating">
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <p>(5.0)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="assets/images/icons/google-icon.svg" alt="icon">
-                                </div>
-                                <p class="text">“Throughout my early career a developer and product haveing manager,
-                                    passionate, and customer-centric people to create customer experiences at the level
-                                    it can and should potential over histories digital”
-                                </p>
-                            </div>
-                            <div class="single-googleReview">
-                                <div class="client-info-box">
-                                    <div class="single-client">
-                                        <img src="assets/images/reviewer-img-1.png" alt="client Img">
-                                        <div>
-                                            <p class="client-name">Steven MC Quillen</p>
-                                            <div class="rating">
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <span><i class="flaticon-star"></i></span>
-                                                <p>(5.0)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="assets/images/icons/google-icon.svg" alt="icon">
-                                </div>
-                                <p class="text">“Throughout my early career a developer and product haveing manager,
-                                    passionate, and customer-centric people to create customer experiences at the level
-                                    it can and should potential over histories digital”
-                                </p>
-                            </div>
+                    <div class="col-lg-6 d-flex align align-items-end">
+                        <div class="fe-section-title">
+                            <h3 class="mb-3">How I Enable IT To Make Business Successful</h3>
+                            <p class="fe-content-text-1 mb-10">I empower IT to be a strategic partner in business
+                                success,
+                                transforming technology from a support function into a critical driver of growth and
+                                innovation. By aligning IT solutions with business objectives, I help organizations
+                                enhance operational efficiency, improve decision-making, and adapt quickly to changing
+                                market demands. <br><br> My approach focuses on optimizing infrastructure, ensuring
+                                seamless digital experiences, and fostering collaboration across teams to leverage the
+                                full potential of technology.</p>
+                            <a href="#" class="btn btn-p1 regular-btn">Articles And Knowledge</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Google Review 2 Section End -->
+    <!-- Enable IT Section End -->
 
 
 
-    <!-- Article Section Start -->
-    <div id="fc-article" class="fc-article section-pb">
-        <div class="fc-article-area">
+    <!-- Empowering Stories Section Start -->
+    <div id="fe-empowering-stories" class="fe-empowering-stories section-pt">
+        <div class="fe-empowering-stories-area">
             <div class="container">
-                <div class="fc-article-content-area">
-                    <div class="fc-section-title" data-aos="fade-down">
-                        <h3>Browse more articles</h3>
-                        <a class="btn btn-l regular-btn" href="blog.html">View All Blog</a>
+                <div class="fe-section-info-area">
+                    <div class="fe-section-title max-area">
+                        <h3 class="mb-3">Empowering Clients with Tailored IT Solutions & Success</h3>
+                        <p class="fe-content-text-1">Empowering clients with innovative, customized IT solutions
+                            designed to drive success at every stage. We are committed
+                            to understanding each client's</p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-8" data-aos="fade-up">
-                            <div class="fc-single-article">
-                                <img class="feature-img" src="assets/images/article-01.png" alt="img">
-                                <div class="meta-box">
-                                    <p class="category">Resources</p>
-                                    <i class="flaticon-dot"></i>
-                                    <p class="read-time">10 Min Read</p>
+                    <a href="javascript:void(0)" class="btn btn-p3 regular-btn d-none d-lg-block">All Success
+                        Stories</a>
+                </div>
+                <div class="row">
+                    <!-- Single Success Company -->
+                    <div class="col-md-6 col-xl-4 mb-7">
+                        <div class="fe-single-stories">
+                            <div class="img-box">
+                                <img class="img-1" src="assets/images/company-name-bg-2.png" alt="Rectangle Background">
+                                <a href="javascript:void(0)"><img class="img-2"
+                                        src="assets/images/success-company-01.png" alt="Company Name"></a>
+                            </div>
+                            <a href="javascript:void(0)" class="web-name">officialdetails.com</a>
+                            <p class="fe-content-text-1 mb-5">With cyber threats growing increasingly sophisticat,
+                                His IT business consultancy offers essential</p>
+                            <div class="info-box">
+                                <div class="single-info">
+                                    <h5>100%</h5>
+                                    <p class="fe-content-text-1">Analysis</p>
                                 </div>
-                                <a href="blog-details.html" class="title">The Secret of Cleaning Your Office</a>
-                                <div class="author-info-box">
-                                    <div class="info">
-                                        <img src="assets/images/writer-1.png" alt="Author">
-                                        <div>
-                                            <p class="name">Kristin Watson</p>
-                                            <p class="date">24 Jan 2023</p>
-                                        </div>
-                                    </div>
-                                    <a class="details-btn" role="button" href="blog-details.html"><i
-                                            class="flaticon-up-right"></i></a>
+                                <div class="single-info">
+                                    <h5>Growth</h5>
+                                    <p class="fe-content-text-1">80-90%</p>
+                                </div>
+                                <div class="single-info">
+                                    <h5>Conversion</h5>
+                                    <p class="fe-content-text-1">90-100%</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-8" data-aos="fade-up">
-                            <div class="fc-single-article">
-                                <img class="feature-img" src="assets/images/article-02.png" alt="img">
-                                <div class="meta-box">
-                                    <p class="category">Resources</p>
-                                    <i class="flaticon-dot"></i>
-                                    <p class="read-time">10 Min Read</p>
+                    </div>
+                    <!-- Single Success Company -->
+                    <div class="col-md-6 col-xl-4 mb-7">
+                        <div class="fe-single-stories">
+                            <div class="img-box">
+                                <img class="img-1" src="assets/images/company-name-bg-2.png" alt="Rectangle Background">
+                                <a href="javascript:void(0)"><img class="img-2"
+                                        src="assets/images/success-company-02.png" alt="Company Name"></a>
+                            </div>
+                            <a href="javascript:void(0)" class="web-name">resistsystems.com</a>
+                            <p class="fe-content-text-1 mb-5">With cyber threats growing increasingly sophisticat,
+                                His IT business consultancy offers essential</p>
+                            <div class="info-box">
+                                <div class="single-info">
+                                    <h5>100%</h5>
+                                    <p class="fe-content-text-1">Analysis</p>
                                 </div>
-                                <a href="blog-details.html" class="title">Visit our office or work station and see
-                                    services.</a>
-                                <div class="author-info-box">
-                                    <div class="info">
-                                        <img src="assets/images/writer-2.png" alt="Author">
-                                        <div>
-                                            <p class="name">Marvin McKinney</p>
-                                            <p class="date">24 Jan 2023</p>
-                                        </div>
-                                    </div>
-                                    <a class="details-btn" role="button" href="blog-details.html"><i
-                                            class="flaticon-up-right"></i></a>
+                                <div class="single-info">
+                                    <h5>Growth</h5>
+                                    <p class="fe-content-text-1">80-90%</p>
+                                </div>
+                                <div class="single-info">
+                                    <h5>Conversion</h5>
+                                    <p class="fe-content-text-1">90-100%</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-8" data-aos="fade-up">
-                            <div class="fc-single-article">
-                                <img class="feature-img" src="assets/images/article-03.png" alt="img">
-                                <div class="meta-box">
-                                    <p class="category">Resources</p>
-                                    <i class="flaticon-dot"></i>
-                                    <p class="read-time">10 Min Read</p>
+                    </div>
+                    <!-- Single Success Company -->
+                    <div class="col-md-6 col-xl-4">
+                        <div class="fe-single-stories">
+                            <div class="img-box">
+                                <img class="img-1" src="assets/images/company-name-bg-2.png" alt="Rectangle Background">
+                                <a href="javascript:void(0)"><img class="img-2"
+                                        src="assets/images/success-company-03.png" alt="Company Name"></a>
+                            </div>
+                            <a href="javascript:void(0)" class="web-name">stackspecs.com</a>
+                            <p class="fe-content-text-1 mb-5">With cyber threats growing increasingly sophisticat,
+                                His IT business consultancy offers essential</p>
+                            <div class="info-box">
+                                <div class="single-info">
+                                    <h5>100%</h5>
+                                    <p class="fe-content-text-1">Analysis</p>
                                 </div>
-                                <a href="blog-details.html" class="title">How to properly disinfect your home or
-                                    office</a>
-                                <div class="author-info-box">
-                                    <div class="info">
-                                        <img src="assets/images/writer-3.png" alt="Author">
-                                        <div>
-                                            <p class="name">Albert Flores</p>
-                                            <p class="date">24 Jan 2023</p>
-                                        </div>
-                                    </div>
-                                    <a class="details-btn" role="button" href="blog-details.html"><i
-                                            class="flaticon-up-right"></i></a>
+                                <div class="single-info">
+                                    <h5>Growth</h5>
+                                    <p class="fe-content-text-1">80-90%</p>
+                                </div>
+                                <div class="single-info">
+                                    <h5>Conversion</h5>
+                                    <p class="fe-content-text-1">90-100%</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="mt-12 d-flex justify-content-center d-lg-none">
+                    <a href="javascript:void(0)" class="btn btn-p3 regular-btn">All Success Stories</a>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Article Section End -->
+    <!-- Empowering Stories Section End -->
 
 
 
-    <!-- Quote 2 Section Start -->
-    <div id="fc-quote-2" class="fc-quote-2 section-pb">
-        <div class="fc-quote-area-2">
+    <!-- Fueling Stories Section Start -->
+    <div id="fe-fueling-stories" class="fe-fueling-stories section-pt ">
+        <div class="fe-fueling-stories-area">
             <div class="container">
-                <div class="fc-quote-content-box">
-                    <div class="row">
-                        <div class="col-lg-6 fc-quote-content-wrapper" data-aos="fade-right">
-                            <div class="fc-quote-content-2">
-                                <h3>Request a cleaning quote today</h3>
-                                <p class="fc-content-text-1">There are many variations of passages of Ipsum available
-                                    but the majority have suffered alteration in some form, by injected humor, or
-                                    randomized.</p>
-                                <div class="fc-contact-box">
-                                    <i class="flaticon-call"></i>
-                                    <div>
-                                        <p class="text">Call Us Now.</p>
-                                        <p class="number">(414) 567 - 2109</p>
-                                    </div>
+                <div class="fe-section-info-area">
+                    <div class="fe-section-title max-area">
+                        <h3 class="mb-3">Fueling Business Success Through Tailored IT Services</h3>
+                        <p class="fe-content-text-1">I am drive business growth by delivering tailored IT solutions
+                            designed to meet unique challenges and goals. My expertise ensures seamless integration</p>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-p3 regular-btn d-none d-lg-block">All Success
+                        Stories</a>
+                </div>
+                <div class="row">
+                    <!-- Single Success Company -->
+                    <div class="col-md-6 col-xl-4 mb-7">
+                        <div class="fe-single-stories">
+                            <div class="img-box">
+                                <img class="img-1" src="assets/images/company-name-bg-3.png" alt="Rectangle Background">
+                                <a href="javascript:void(0)"><img class="img-2"
+                                        src="assets/images/success-company-04.png" alt="Company Name"></a>
+                            </div>
+                            <a href="javascript:void(0)" class="web-name">itdeveloper.com</a>
+                            <p class="fe-content-text-1 mb-5">With cyber threats growing increasingly sophisticat,
+                                His IT business consultancy offers essential</p>
+                            <div class="info-box">
+                                <div class="single-info">
+                                    <h5>100%</h5>
+                                    <p class="fe-content-text-1">Analysis</p>
                                 </div>
-                                <hr class="hr-line">
-                                <h6>Not convinced yet?</h6>
-                                <p class="fc-content-text-1">Suffered alteration in some form, by injected humor, or
-                                    randomized words that believable and through.</p>
-                                <a class="btn btn-xl second-btn" role="button" href="price-plan.html">Browse our
-                                    packages</a>
+                                <div class="single-info">
+                                    <h5>Growth</h5>
+                                    <p class="fe-content-text-1">80-90%</p>
+                                </div>
+                                <div class="single-info">
+                                    <h5>Conversion</h5>
+                                    <p class="fe-content-text-1">90-100%</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6" data-aos="fade-left">
-                            <div class="fc-quoteForm-container-2">
-                                <div class="fc-quoteForm-container">
-                                    <form action="#" method="post">
-                                        <div class="fc-form-group">
-                                            <div>
-                                                <label for="name">Name</label>
-                                                <input type="text" id="name" name="name" placeholder="Your Name"
-                                                    required>
-                                            </div>
-                                            <div>
-                                                <label for="phone">Phone Number</label>
-                                                <input type="text" id="phone" name="phone"
-                                                    placeholder="(414) 567 - 2109" required>
-                                            </div>
-                                        </div>
-                                        <div class="fc-form-group">
-                                            <div>
-                                                <label for="address">Address</label>
-                                                <input type="text" id="address" name="address"
-                                                    placeholder="Address here..." required>
-                                            </div>
-                                            <div>
-                                                <label for="email">Email</label>
-                                                <input type="email" id="email" name="email"
-                                                    placeholder="email@example.com" required>
-                                            </div>
-                                        </div>
-                                        <div class="fc-form-group">
-                                            <div>
-                                                <label for="service">Requested Service</label>
-                                                <input type="text" id="service" name="service"
-                                                    placeholder="House Cleaning" required>
-                                            </div>
-                                            <div>
-                                                <label for="date">Day of Service</label>
-                                                <input type="date" id="date" name="date" value="2024-01-01" required>
-                                            </div>
-                                        </div>
-                                        <div class="fc-form-note-box">
-                                            <label for="note">Add a note</label>
-                                            <textarea id="note" name="note"
-                                                placeholder="Please type your message here..." rows="4"></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-xl regular-btn">Submit Message</button>
-                                    </form>
+                    </div>
+                    <!-- Single Success Company -->
+                    <div class="col-md-6 col-xl-4 mb-7">
+                        <div class="fe-single-stories">
+                            <div class="img-box">
+                                <img class="img-1" src="assets/images/company-name-bg-3.png" alt="Rectangle Background">
+                                <a href="javascript:void(0)"><img class="img-2"
+                                        src="assets/images/success-company-05.png" alt="Company Name"></a>
+                            </div>
+                            <a href="javascript:void(0)" class="web-name">trendathon.com</a>
+                            <p class="fe-content-text-1 mb-5">With cyber threats growing increasingly sophisticat,
+                                His IT business consultancy offers essential</p>
+                            <div class="info-box">
+                                <div class="single-info">
+                                    <h5>100%</h5>
+                                    <p class="fe-content-text-1">Analysis</p>
+                                </div>
+                                <div class="single-info">
+                                    <h5>Growth</h5>
+                                    <p class="fe-content-text-1">80-90%</p>
+                                </div>
+                                <div class="single-info">
+                                    <h5>Conversion</h5>
+                                    <p class="fe-content-text-1">90-100%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Success Company -->
+                    <div class="col-md-6 col-xl-4">
+                        <div class="fe-single-stories">
+                            <div class="img-box">
+                                <img class="img-1" src="assets/images/company-name-bg-3.png" alt="Rectangle Background">
+                                <a href="javascript:void(0)"><img class="img-2"
+                                        src="assets/images/success-company-06.png" alt="Company Name"></a>
+                            </div>
+                            <a href="javascript:void(0)" class="web-name">itaustralia.com</a>
+                            <p class="fe-content-text-1 mb-5">With cyber threats growing increasingly sophisticat,
+                                His IT business consultancy offers essential</p>
+                            <div class="info-box">
+                                <div class="single-info">
+                                    <h5>100%</h5>
+                                    <p class="fe-content-text-1">Analysis</p>
+                                </div>
+                                <div class="single-info">
+                                    <h5>Growth</h5>
+                                    <p class="fe-content-text-1">80-90%</p>
+                                </div>
+                                <div class="single-info">
+                                    <h5>Conversion</h5>
+                                    <p class="fe-content-text-1">90-100%</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="mt-7 d-flex justify-content-center d-lg-none">
+                    <a href="javascript:void(0)" class="btn btn-p3 regular-btn">All Success Stories</a>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Quote 2 Section End -->
+    <!-- Fueling Stories Section End -->
 
 
 
-    <!-- Newsletter Section Start -->
-    <div id="fc-newsletter" class="fc-newsletter">
-        <div class="fc-newsletter-area">
-            <img src="assets/images/newsletter-bg.png" alt="Background">
+    <!-- Growth Section Start -->
+    <div id="fe-growth" class="fe-growth section">
+        <div class="fe-growrh-area">
             <div class="container">
-                <div class="fc-newsletter-content">
-                    <div class="content-box">
-                        <h3 data-aos="fade-right">Subscribe Our Newsletter</h3>
-                        <div class="input-box" data-aos="fade-left">
-                            <input type="email" name="email" placeholder="Email address" required>
-                            <button class="btn btn-xl regular-btn" type="button">Subscribe</button>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!--Mobile Responsive Title -->
+                        <div class="fe-section-title">
+                            <h3 class="mb-3 d-block d-lg-none">The Essence of Me A Journey Through Growth and Discovery
+                            </h3>
+                        </div>
+                        <div class="fe-growth-img-box">
+                            <div class="img-box">
+                                <img class="img-1" src="assets/images/growth-rectangle-bg-2.png"
+                                    alt="Rectangle Background">
+                                <img class="img-2" src="assets/images/growth-img-02.png" alt="Self Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="fe-section-title">
+                            <h3 class="mb-3 d-none d-lg-block">The Essence of Me A Journey Through Growth and Discovery
+                            </h3>
+                            <p class="fe-content-text-1 mb-10">At the core of my mission is a commitment to facilitating
+                                growth and discovery in the technology sector. I am withbusinesses to navigate the
+                                complexities of IT, fostering innovative solutions that drive efficiency and success.
+                                Through collaboration and insight, I empower organizations to evolve, adapt, and excel
+                                in a rapidly changing digital world. <br> <br>
+                                My consultancy stands as a beacon of transformation, guiding businesses on a path of
+                                exploration and advancement. With a focus on tailored strategies and innovative
+                                technologies, I help organizations unlock new opportunities, enhance their capabilities,
+                                and embrace the challenges of the digital age. Together, I embark on a journey of growth
+                                that paves the way for a successful future.</p>
+                            <a href="#" class="btn btn-p2 regular-btn">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Newsletter Section End -->
+    <!-- Growth Section End -->
+
+
+
+    <!-- Articles Section Start -->
+    <div id="fe-articles" class="fe-articles section">
+        <div class="fe-articles-area">
+            <div class="container">
+                <div class="fe-section-info-area">
+                    <div class="fe-section-title max-area">
+                        <h3 class="mb-3">Discover the Latest Trends and Expert Insights in My Articles</h3>
+                        <p class="fe-content-text-1">Stay ahead of the curve by delving into my articles, where you'll
+                            find the latest trends and expert insights. Each piece is crafted to provide you with
+                            valuable knowledge</p>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-p4 regular-btn d-none d-lg-block">All Articles</a>
+                </div>
+                <div class="row">
+                    <!-- Single Article -->
+                    <div class="col-md-6 col-xl-4 mb-7">
+                        <div class="fe-single-articles">
+                            <a href="javascript:void(0)" class="article-img"><img class="w-100 rounded-5"
+                                    src="assets/images/articles-04.png" alt="Article Image"></a>
+                            <div class="meta-box">
+                                <p class="fe-content-text-2">03 October 2024</p>
+                                <p class="fe-content-text-2 read-time"><i class="fa-solid fa-circle"></i>7 min read</p>
+                            </div>
+                            <a href="javascript:void(0)" class="title">The Future of IT Consultancy</a>
+                            <p class="fe-content-text-1">As the digital landscape continues to evolve at an
+                                unprecedented pace, the role of IT consultancy is...</p>
+                            <a href="javascript:void(0)" class="btn btn-p4 second-btn">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Single Article -->
+                    <div class="col-md-6 col-xl-4 mb-7">
+                        <div class="fe-single-articles">
+                            <a href="javascript:void(0)" class="article-img"><img class="w-100 rounded-5"
+                                    src="assets/images/articles-05.png" alt="Article Image"></a>
+                            <div class="meta-box">
+                                <p class="fe-content-text-2">12 October 2024</p>
+                                <p class="fe-content-text-2 read-time"><i class="fa-solid fa-circle"></i>5 min read</p>
+                            </div>
+                            <a href="javascript:void(0)" class="title">How IT Consultants Drive Business</a>
+                            <p class="fe-content-text-1">IT consultants play a vital role in driving business success by
+                                leveraging their expertise to optimize...</p>
+                            <a href="javascript:void(0)" class="btn btn-p4 second-btn">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Single Article -->
+                    <div class="col-md-6 col-xl-4 mb-7">
+                        <div class="fe-single-articles">
+                            <a href="javascript:void(0)" class="article-img"><img class="w-100 rounded-5"
+                                    src="assets/images/articles-06.png" alt="Article Image"></a>
+                            <div class="meta-box">
+                                <p class="fe-content-text-2">19 October 2024</p>
+                                <p class="fe-content-text-2 read-time"><i class="fa-solid fa-circle"></i>4 min read</p>
+                            </div>
+                            <a href="javascript:void(0)" class="title">Best Practices for IT Consultants</a>
+                            <p class="fe-content-text-1">Effective IT consultants combine technical expertise with
+                                strong communication skills to deliver tailore...</p>
+                            <a href="javascript:void(0)" class="btn btn-p4 second-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-7 d-flex justify-content-center d-lg-none">
+                    <a href="javascript:void(0)" class="btn btn-p3 regular-btn">All Articles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Articles Section End -->
+
+
+
+    <!-- Contact Form Section Start -->
+    <div id="fe-contact" class="fe-contact section">
+        <div class="fe-contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="fe-contact-info-box fe-section-title">
+                            <h3 class="mb-3">Get In Touch</h3>
+                            <p class="fe-content-text-1 mb-10">Let's start the conversation!</p>
+                            <div class="single-contact mb-12">
+                                <div class="icon-box bg-1"><i class="fa-solid fa-envelope icon"></i></div>
+                                <div>
+                                    <h5 class="mb-2">Email Address</h5>
+                                    <p class="fe-content-text-1">example123@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="single-contact mb-12">
+                                <div class="icon-box bg-2"><i class="fa-solid fa-phone icon"></i></div>
+                                <div>
+                                    <h5 class="mb-2">Phone Number</h5>
+                                    <p class="fe-content-text-1">123 456 7890</p>
+                                </div>
+                            </div>
+                            <div class="single-contact mb-12">
+                                <div class="icon-box bg-3"><i class="fa-solid fa-location-dot icon"></i></div>
+                                <div>
+                                    <h5 class="mb-2">Location</h5>
+                                    <p class="fe-content-text-1">1040 Todds Lane, San Antonio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form class="fe-contact-form-box">
+                            <div class="row">
+                                <div class="col-lg-6 single-input mb-5">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" placeholder="Enter your first name">
+                                </div>
+                                <div class="col-lg-6 single-input mb-5">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" placeholder="Enter your last name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 single-input mb-5">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="col-lg-6 single-input mb-5">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" id="phone" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            <div class="single-input mb-5">
+                                <label for="message">Your message</label>
+                                <textarea id="message" rows="6" placeholder="Enter your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-p1 regular-btn w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Form Section End -->
 
 
 
     <!-- Scroll To Top Start -->
-    <button data-aos="zoom-in" id="scrollToTop" class="scrollToTop"><i class="flaticon-up-right"></i>
-    </button>
+    <button type="button" id="scrollToTop" class="scrollToTop"><i class="fa-solid fa-angles-up icon"></i></button>
     <!-- Scroll To Top End -->
 
 
 
     <!-- Footer Section start-->
-    <div id="fc-footer" class="fc-footer">
-        <div class="fc-footer-area">
+    <div id="fe-footer" class="fe-footer section-pt">
+        <div class="fe-footer-area">
             <div class="container">
-                <div class="fc-footer-content-box">
+                <div class="fe-footer-content-box">
                     <div class="row">
                         <div class="col-lg-4 mb-4">
-                            <div class="fc-footer-menu">
-                                <h5>Quality cleaning for your home</h5>
-                                <p class="fc-content-text-1">Suffered alteration in some form, by injected humor, or
-                                    randomized.</p>
+                            <div class="fe-footer-menu">
+                                <a href="index.html"><img src="assets/images/fe-logo-02.png" alt="Site logo"></a>
+                                <p class="fe-content-text-1">IT consultancy can be a rewarding career path for those
+                                    with the right skills and mindset, offering the opportunity to make a significant
+                                    impact on clients</p>
                                 <ul class="icon-menu">
-                                    <li><a href="#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-                                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="flaticon-linkedin"></i></a></li>
-                                    <li><a href="#"><i
-                                                class="flaticon-instagram"></i><span>|</span><span>Instagram</span></a>
-                                    </li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f icon"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter icon"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram icon"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in icon"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-pinterest-p icon"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 mb-4">
-                            <div class="fc-footer-menu">
+                            <div class="fe-footer-menu">
                                 <p class="menu-category">Contact us</p>
                                 <ul class="menu-list">
-                                    <li class="fc-content-text-1 mb-3"><i class="flaticon-location"></i>2972 Westheimer
-                                        Rd.
-                                        Ana, Illinois 85486</li>
-                                    <li class="fc-content-text-1 mb-3"><i class="flaticon-telephone"></i>(+91) 1234 4569
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-me.html">About Me</a></li>
+                                    <li><a href="it-leadership.html">IT Leadership</a>
                                     </li>
-                                    <li class="fc-content-text-1"><i
-                                            class="flaticon-mail-inbox-app"></i>contact@gmail.com
-                                    </li>
+                                    <li><a href="it-driving-business-success.html">IT Driving
+                                            Business Success</a></li>
+                                    <li><a href="it-success.html">IT Success</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 mb-4">
-                            <div class="fc-footer-menu">
-                                <p class="menu-category">Open Hours</p>
-                                <ul class="menu-list mb-3">
-                                    <li class="day">Monday to Friday</li>
-                                    <li class="fc-content-text-1">6:00 AM - 9:00 PM</li>
-                                </ul>
+                            <div class="fe-footer-menu">
+                                <p class="menu-category">Partner</p>
                                 <ul class="menu-list">
-                                    <li class="day">Saturday & Sunday</li>
-                                    <li class="fc-content-text-1">8:00 AM - 8:00 PM</li>
+                                    <li><a href="javascript:void(0)">My Partners</a></li>
+                                    <li><a href="fe-empowering-stories">Community</a></li>
+                                    <li><a href="fe-fueling-stories">Clients</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="fc-footer-menu">
-                                <p class="menu-category">Quick Link</p>
+                            <div class="fe-footer-menu">
+                                <p class="menu-category">Support</p>
                                 <ul class="menu-list">
-                                    <li class="fc-content-text-1 mb-3"><a href="about.html">About Us</a></li>
-                                    <li class="fc-content-text-1 mb-3"><a href="service.html">Service</a></li>
-                                    <li class="fc-content-text-1 mb-3"><a href="testimonial.html">Testimonial</a></li>
-                                    <li class="fc-content-text-1"><a href="price-plan.html">Pricing</a></li>
+                                    <li><a href="fe-contact">Contact Me</a></li>
+                                    <li><a href="about-me.html">Privacy Policy</a></li>
+                                    <li><a href="about-me.html">Terms & Conditions</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <div class="fc-copyright-box">
-                        <img src="assets/images/logo-1.png" alt="logo">
-                        <p class="fc-content-text-1">Copyright © Cleaning | All Rights Reserved Copyright</p>
-                    </div>
                 </div>
+            </div>
+            <div class="fe-copyright-box">
+                <p class="fe-content-text-1">Copyright © 2024 FRANKENDRIKAT | All Rights Reserved</p>
             </div>
         </div>
     </div>
@@ -847,17 +651,13 @@
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Meanmenu -->
-    <script src="assets/js/jquery.meanmenu.js"></script>
     <!-- Slick Slider -->
     <script src="assets/js/slick.min.js"></script>
     <!-- AOS Js -->
-    <script src="assets/js/aos.js"></script>
-    <!-- Xzoom -->
-    <script src="assets/js/xzoom.min.js"></script>
-    <!-- Counterup -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- <script src="assets/js/aos.js"></script> -->
+    <!-- Font Awesome -->
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
     <!-- Main Script -->
     <script src="assets/js/main.js"></script>
 </body>

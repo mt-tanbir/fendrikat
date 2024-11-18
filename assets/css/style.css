@@ -4544,6 +4544,14 @@ i {
     background-color: transparent;
 }
 
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: var(--Black-Normal, #1B1213);
+    font-weight: 600;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 .dropdown-item:hover {
     background-color: #1a3d4c;
     opacity: 0.7;
@@ -4618,34 +4626,80 @@ i {
     margin-top: 40px;
 }
 
-.hero-img-box {
+.fe-hero-img-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.fe-hero-img-box .fe-my-img {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+}
+
+.fe-hero-img-box .fe-my-img .img-1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.fe-hero-img-box .fe-my-img .img-2 {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90%;
+    height: auto;
+    border-radius: 18px;
+}
+
+
+/* Hero 2 CSS */
+.fe-hero-video-box {
     display: flex;
     justify-content: end;
 }
 
-.hero-img-box .fe-my-img {
-    width: 520px;
-    height: 540px;
+.fe-hero-video-box iframe {
+    border-radius: 12px;
+    display: flex;
+    width: 480px;
+    height: 407px;
 }
 
-.hero-img-box .fe-my-img {
+/* Hero 3 CSS */
+.fe-hero-content-3 {
     position: relative;
-    z-index: 1;
-    width: 460px;
-    height: 510px;
+    z-index: 99;
+    padding-top: 184px;
+    padding-bottom: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.hero-img-box .fe-my-img::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0px);
-    background: url(../images/hero-img-rectangle.png) no-repeat center;
-    width: 520px;
-    height: 540px;
-    flex-shrink: 0;
-    bottom: 0;
-    z-index: -1;
+.fe-hero-content-3 .fe-menu {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.fe-hero-content-3 .fe-menu .menu-name {
+    display: block;
+    color: #1B1213;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.fe-hero-content-3 .fe-menu .menu-name:hover {
+    color: #1A5E81;
+    transition: .4s ease-in-out 0s;
+    transform: scale(1.04);
 }
 
 /*=========================================================================================
@@ -4752,7 +4806,6 @@ i {
 .fe-single-stories .img-box .img-2 {
     position: relative;
     max-width: 360px;
-    height: 200px;
 }
 
 .fe-single-stories .web-name {
@@ -4793,28 +4846,34 @@ i {
     background: #FAFAFA;
 }
 
+.fe-growth-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .fe-growth-img-box .img-box {
     position: relative;
+    width: 100%;
     max-width: 570px;
-    height: 592px;
-    display: flex;
-    align-items: end;
-    justify-content: center;
 }
 
-.fe-growth-img-box .img-box .img-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 570px;
-    height: 592px;
-}
-
-.fe-growth-img-box .img-box .img-2 {
+.fe-growth-img-box .img-1 {
     position: relative;
-    max-width: 504px;
-    height: 558px;
+    width: 100%;
+    height: auto;
 }
+
+.fe-growth-img-box .img-2 {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90%;
+    height: auto;
+    border-radius: 18px;
+}
+
 
 /*=========================================================================================
     Growth Section CSS End
@@ -5046,10 +5105,238 @@ i {
 
 
 /*=========================================================================================
-    Home 1 Page CSS Start
+    IT Leadership Page CSS Start
+ ==========================================================================================*/
+.fe-common-info {
+    background: #FAFAFA;
+}
+
+.fe-strategic-content .hr-line {
+    border-bottom: 0.5px solid var(--White-Darker, #595959);
+    margin: 32px 0px;
+}
+
+.fe-single-strategic {
+    height: 100%;
+    padding: 24px;
+    border-radius: 16px;
+    background: #FAFAFA;
+}
+
+.fe-single-strategic .icon-box {
+    display: flex;
+    width: 49px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #F0F0F0;
+    margin-bottom: 24px;
+}
+
+.fe-single-strategic-img-box {
+    display: flex;
+    justify-content: end;
+}
+
+.fe-single-strategic-img {
+    max-width: 504px;
+    height: 100%;
+}
+
+.fe-single-strategic-img img {
+    border-radius: 16px;
+}
+
+.fe-technology-img-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.fe-technology-img-box img {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+    height: auto;
+    border-radius: 12px;
+}
+
+.fe-technology-img-box img:nth-child(3) {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.fe-leadership-info {
+    max-width: 680px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.single-leadership-info {
+    position: relative;
+}
+
+.single-leadership-info a {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.single-leadership-info a img {
+    width: 100%;
+    height: 350px;
+    border-radius: 16px;
+}
+
+.single-leadership-info a::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 150px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(34, 35, 56, 0) 0%, #1D1D25 100%);
+}
+
+.single-leadership-info .fe-section-title h6,
+.single-leadership-info .fe-section-title p {
+    color: var(--White-Normal, #FEFEFE);
+}
+
+.single-leadership-info .fe-section-title {
+    position: absolute;
+    padding: 24px;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+/*=========================================================================================
+    IT Leadership Page CSS End
  ==========================================================================================*/
 
 
-/*--------------------------------------------------------------------------
-        About 1 Section CSS Start
- ---------------------------------------------------------------------------*/
+
+/*=========================================================================================
+    IT Driving Business Success Page CSS Start
+ ==========================================================================================*/
+.fe-business-success {
+    background: #FAFAFA;
+}
+
+.fe-business-success-list {
+    list-style: disc;
+    padding-left: 24px;
+}
+
+.fe-business-success-list li {
+    color: var(--Black-Normal, #1B1213);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+
+.fe-business-success-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.fe-business-success-img img {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+    border-radius: 12px;
+    height: 250px;
+}
+
+.fe-business-success-img img:nth-child(3) {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.fe-benefit-of-work-item .single-element {
+    border-radius: 16px;
+    border: 0.5px solid #EEE;
+    background: #FAFAFA;
+    padding: 24px 32px;
+    display: flex;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 16px;
+}
+
+.fe-benefit-of-work-item .single-element .icon-box {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+/*=========================================================================================
+    IT Driving Business Success Page CSS End
+ ==========================================================================================*/
+
+
+
+/*=========================================================================================
+    IT Success Page CSS Start
+ ==========================================================================================*/
+.fe-fueling-success-img {
+    position: relative;
+}
+
+.fe-fueling-success-img .img-1,
+.fe-fueling-success-img .img-2 {
+    border-radius: 12px;
+    width: 270px;
+    height: 330px;
+}
+
+.fe-fueling-success-img .img-2 {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+.fe-services {
+    background: #FAFAFA;
+}
+
+.fe-services-info {
+    max-width: 680px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.fe-single-services-box {
+    border-radius: 16px;
+    border: 0.5px solid #EAEAEA;
+    background: var(--White-Light, #FFF);
+    padding: 24px;
+}
+
+.fe-single-services-box .icon-box {
+    display: flex;
+    width: 49px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #F6F6F6;
+    margin-bottom: 24px;
+}
+
+
+.fe-strategies-info {
+    max-width: 680px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+/*=========================================================================================
+    IT Success Page CSS End
+ ==========================================================================================*/

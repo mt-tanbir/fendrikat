@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRANKENDRIKAT | Home</title>
+    <title>FRANKENDRIKAT | Home 1</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <!-- HK Grotesk Google Font -->
@@ -18,7 +18,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Slick Slider -->
-
+    <link rel="stylesheet" href="assets/css/slick.css">
     <!-- AOS CSS -->
     <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
     <!-- Style CSS -->
@@ -33,7 +33,7 @@
         <div class="header-area">
             <div class="container">
                 <nav class="navbar navbar-expand-lg fe-navbar">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
                         <img src="assets/images/fe-logo-01.png" alt="Logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,34 +48,35 @@
                                     Home
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="homeDropdown">
-                                    <li><a class="dropdown-item border-bottom" href="#">Home 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Home 2</a></li>
+                                    <li><a class="dropdown-item border-bottom active" href="index.html">Home 1</a></li>
+                                    <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
                                 </ul>
                             </li>
                             <!-- Other Navbar Items -->
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Me</a>
+                                <a class="nav-link" href="about-me.html">About Me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">IT Leadership</a>
+                                <a class="nav-link" href="it-leadership.html">IT Leadership</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="businessDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="it-driving-business-success.html"
+                                    id="businessDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     IT Driving Business Success
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="businessDropdown">
-                                    <li><a class="dropdown-item border-bottom" href="#">IT Driving Business Success</a>
+                                    <li><a class="dropdown-item border-bottom"
+                                            href="it-driving-business-success.html">IT Driving Business Success</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">IT Success</a></li>
+                                    <li><a class="dropdown-item" href="it-success.html">IT Success</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item d-lg-none">
-                                <a href="#" class="btn btn-p2 regular-btn">Contact Me</a>
+                                <a href="#fe-contact" class="btn btn-p2 regular-btn">Contact Me</a>
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn-p2 regular-btn d-none d-lg-block">Contact Me</a>
+                    <a href="#fe-contact" class="btn btn-p2 regular-btn d-none d-lg-block">Contact Me</a>
                 </nav>
             </div>
         </div>
@@ -96,8 +97,18 @@
                                 <div class="fe-content-text-2 d-flex align-items-baseline gap-2">IT Solution<div
                                         class="line"></div>
                                 </div>
-                                <h1>Driving Digital <br> <span class="fe-oval-text">Success</span> Through Expert IT
+                                <h1>Driving Digital <span class="fe-oval-text">Success</span> Through Expert IT
                                     Consulting</h1>
+                                <!-- Hero Resoinsive Image -->
+                                <div class="d-block d-lg-none my-7">
+                                    <div class="fe-hero-img-box">
+                                        <div class="fe-my-img">
+                                            <img class="img-1" src="assets/images/hero-img-rectangle.png"
+                                                alt="Rectangle Img">
+                                            <img class="img-2" src="assets/images/hero-img-01.png" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
                                 <p class="fe-content-text-1">At the core of digital transformation lies the need for
                                     expert guidance and strategic vision. My IT consulting services are designed to
                                     propel your business</p>
@@ -105,9 +116,13 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="hero-img-box">
-                                <div class="fe-my-img">
-                                    <img src="assets/images/hero-img-01.png" alt="Img">
+                            <div class="d-none d-lg-block">
+                                <div class="fe-hero-img-box">
+                                    <div class="fe-my-img">
+                                        <img class="img-1" src="assets/images/hero-img-rectangle.png"
+                                            alt="Rectangle Img">
+                                        <img class="img-2" src="assets/images/hero-img-01.png" alt="Image">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -261,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-12 d-inline-block d-lg-none">
+                <div class="mt-12 d-flex justify-content-center d-lg-none">
                     <a href="javascript:void(0)" class="btn btn-p3 regular-btn">All Success Stories</a>
                 </div>
             </div>
@@ -367,7 +382,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-7 d-inline-block d-lg-none">
+                <div class="mt-7 d-flex justify-content-center d-lg-none">
                     <a href="javascript:void(0)" class="btn btn-p3 regular-btn">All Success Stories</a>
                 </div>
             </div>
@@ -383,6 +398,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
+                        <!--Mobile Responsive Title -->
+                        <div class="fe-section-title">
+                            <h3 class="mb-3 d-block d-lg-none">The Essence of Me A Journey Through Growth and Discovery
+                            </h3>
+                        </div>
                         <div class="fe-growth-img-box">
                             <div class="img-box">
                                 <img class="img-1" src="assets/images/growth-rectangle-bg.png"
@@ -393,7 +413,8 @@
                     </div>
                     <div class="col-lg-6 d-flex align-items-center">
                         <div class="fe-section-title">
-                            <h3 class="mb-3">The Essence of Me A Journey Through Growth and Discovery</h3>
+                            <h3 class="mb-3 d-none d-lg-block">The Essence of Me A Journey Through Growth and Discovery
+                            </h3>
                             <p class="fe-content-text-1 mb-10">At the core of my mission is a commitment to facilitating
                                 growth and discovery in the technology sector. I am withbusinesses to navigate the
                                 complexities of IT, fostering innovative solutions that drive efficiency and success.
@@ -475,7 +496,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-7 d-inline-block d-lg-none">
+                <div class="mt-7 d-flex justify-content-center d-lg-none">
                     <a href="javascript:void(0)" class="btn btn-p3 regular-btn">All Articles</a>
                 </div>
             </div>
@@ -508,7 +529,7 @@
                                     <p class="fe-content-text-1">123 456 7890</p>
                                 </div>
                             </div>
-                            <div class="single-contact">
+                            <div class="single-contact mb-12">
                                 <div class="icon-box bg-3"><i class="fa-solid fa-location-dot icon"></i></div>
                                 <div>
                                     <h5 class="mb-2">Location</h5>
@@ -633,7 +654,7 @@
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Slick Slider -->
-
+    <script src="assets/js/slick.min.js"></script>
     <!-- AOS Js -->
     <!-- <script src="assets/js/aos.js"></script> -->
     <!-- Font Awesome -->
