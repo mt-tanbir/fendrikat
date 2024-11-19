@@ -4,6 +4,10 @@
     .fe-section-title h1 {
         font-size: 54px;
     }
+
+    .fe-fueling-success-img .img-2 {
+        right: 0px;
+    }
 }
 
 @media screen and (max-width: 1280px) {}
@@ -127,6 +131,25 @@
     .fe-business-success-img {
         margin-bottom: 16px;
     }
+
+    .fe-fueling-success-img .img-2 {
+        position: relative;
+        top: 0px;
+    }
+
+    .fe-fueling-success-img {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .fe-fueling-success-img img {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        height: auto;
+    }
+
+
 }
 
 @media screen and (max-width: 769px) {}
@@ -153,6 +176,15 @@
         padding-bottom: 70px;
     }
 
+    .fe-fueling-success-img .img-1,
+    .fe-fueling-success-img .img-2 {
+        height: auto;
+    }
+
+    .fe-slider-content .single-slide .image {
+        height: 230px;
+    }
+
 }
 
 
@@ -172,6 +204,15 @@
 
     .fe-business-success-img img {
         height: 150px;
+    }
+
+    .fe-contact-info-box .single-contact .icon-box .icon {
+        font-size: 24px;
+    }
+
+    .fe-contact-info-box .single-contact .icon-box {
+        width: 60px;
+        height: 60px;
     }
 }
 

@@ -4520,7 +4520,6 @@ i {
 .dropdown-menu {
     position: relative;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     background-color: #DCF5EA;
     margin-top: 15px !important;
     border: none;
@@ -5114,6 +5113,7 @@ i {
 .fe-strategic-content .hr-line {
     border-bottom: 0.5px solid var(--White-Darker, #595959);
     margin: 32px 0px;
+    width: 100%;
 }
 
 .fe-single-strategic {
@@ -5211,6 +5211,10 @@ i {
     bottom: 0;
     left: 0;
     z-index: 3;
+}
+
+.fe-technology-and-it {
+    background: #FAFAFA;
 }
 
 /*=========================================================================================
@@ -5316,6 +5320,7 @@ i {
     border: 0.5px solid #EAEAEA;
     background: var(--White-Light, #FFF);
     padding: 24px;
+    height: 100%;
 }
 
 .fe-single-services-box .icon-box {
@@ -5329,14 +5334,172 @@ i {
     margin-bottom: 24px;
 }
 
-
 .fe-strategies-info {
     max-width: 680px;
     text-align: center;
     margin-bottom: 60px;
 }
 
+/* Slider CSS */
+
+.fe-slider-content-box {
+    margin: 0 auto;
+}
+
+.fe-slider-content {
+    margin-bottom: 48px;
+}
+
+.fe-slider-content .single-slide .image {
+    display: flex;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+.fe-slider-content .single-slide .title {
+    color: var(--Black-Normal, #1B1213);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fe-slider-content .single-slide .title:hover {
+    color: #1A5E81;
+    transition: .2s ease-in-out 0s;
+}
+
+.fe-slider-content .slick-slide {
+    margin: 0 10px;
+}
+
+.fe-slider-content .slick-list {
+    margin: 0 -10px;
+}
+
+/**
+ *  Progress Bar
+ */
+.fe-slide-progress {
+    display: block;
+    width: 90%;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #EDEDED;
+    background-image: linear-gradient(to right, black, black);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.4s ease-in-out;
+}
+
+.fe-slide-progress .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 /*=========================================================================================
     IT Success Page CSS End
+ ==========================================================================================*/
+
+
+
+/*=========================================================================================
+    About Me Page CSS Start
+ ==========================================================================================*/
+.fe-single-services-box-2 .icon-box-2 {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: #F6F6F6;
+    margin-bottom: 40px;
+}
+
+.fe-single-services-box-2 {
+    border-radius: 16px;
+    border: 0.5px solid #EAEAEA;
+    background: var(--White-Light, #FFF);
+    padding: 36px;
+    height: 100%;
+}
+
+.fe-guided-success-info-box .hr-line {
+    border-bottom: 0.5px solid var(--white-dark-hover, #989898);
+    margin: 32px 0px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.fe-guided-success-img {
+    position: relative;
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+}
+
+.fe-guided-success-img .star-icon-1 {
+    position: absolute;
+    left: 324px;
+    width: 80px;
+    height: 80px;
+}
+
+.fe-guided-success-img .star-icon-2 {
+    position: absolute;
+    top: 0px;
+    left: 49px;
+    width: 80px;
+    height: 80px;
+}
+
+.fe-guided-success-img .front-image {
+    position: relative;
+    width: 320px;
+    border-radius: 19px;
+    z-index: 2;
+    transition: .5s ease-in-out 0s;
+}
+
+.fe-guided-success-img .back-image {
+    position: absolute;
+    top: 0px;
+    left: 149px;
+    transition: z-index 0.5s ease-in-out;
+}
+
+.fe-guided-success-img .back-image:hover {
+    z-index: 3;
+}
+
+.fe-guided-success-img .front-image img {
+    border: 5.938px solid #FEFEFE;
+    border-radius: 19px;
+}
+
+.fe-guided-success-img-box {
+    padding-left: 50px !important;
+}
+
+/*=========================================================================================
+    About Me Page CSS End
  ==========================================================================================*/
