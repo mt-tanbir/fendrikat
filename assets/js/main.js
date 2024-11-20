@@ -1,88 +1,85 @@
-$(document).ready(function () {
-  /* =========================================================
-        Meanmenu js / Mobile Menu Js
-    =========================================================*/
-
-  /* =========================================================
-        Scroll To Top Start
-    =========================================================*/
-  var scrollToTopBtn = $(".scrollToTop");
-  function handleScroll() {
-    if ($(window).scrollTop() > 400) {
-      scrollToTopBtn.show();
-    } else {
-      scrollToTopBtn.hide();
-    }
-  }
-  handleScroll();
-  $(window).scroll(function () {
-    handleScroll();
-  });
-  scrollToTopBtn.on("click", function () {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-  });
-
-  /* =========================================================
-        Sticky Header
-    =========================================================*/
+/* =========================================================
+    AOS Initialization
+=========================================================*/
+AOS.init({
+  duration: 1000,
 });
 
 /* =========================================================
-    AOS
+    Scroll To Top
 =========================================================*/
-// $(document).ready(function () {
-//   AOS.init({
-//     duration: 1000,
-//   });
-// });
+const scrollToTopBtn = $(".scrollToTop");
 
-$(document).ready(function () {
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 50) {
-      $(".header").addClass("sticky");
-    } else {
-      $(".header").removeClass("sticky");
-    }
-  });
+// Show or hide the button based on scroll position
+function handleScrollToTop() {
+  if ($(window).scrollTop() > 400) {
+    scrollToTopBtn.fadeIn();
+  } else {
+    scrollToTopBtn.fadeOut();
+  }
+}
+
+$(window).on("scroll", handleScrollToTop);
+scrollToTopBtn.on("click", function () {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
 });
-// Slider
-$(document).ready(function () {
-  var $slider = $(".fe-slider-content");
-  var $progressBar = $(".fe-slide-progress");
-  var $progressBarLabel = $(".slider__label");
 
-  $slider.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-    var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+handleScrollToTop(); // Initial check when the page loads
 
-    $progressBar
-      .css("background-size", calc + "% 100%")
-      .attr("aria-valuenow", calc);
+/* =========================================================
+    Sticky Header
+=========================================================*/
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 50) {
+    $(".header").addClass("sticky");
+  } else {
+    $(".header").removeClass("sticky");
+  }
+});
 
-    $progressBarLabel.text(calc.toFixed(0) + "% completed");
-  });
+/* =========================================================
+    Slick Slider
+=========================================================*/
+const $slider = $(".fe-slider-content");
+const $progressBar = $(".fe-slide-progress");
+const $progressBarLabel = $(".slider__label");
 
-  $slider.slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    speed: 900,
-    arrows: false,
-    dots: false,
-    draggable: true,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
+// Update progress bar on slide change
+$slider.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+  const calc = (nextSlide / (slick.slideCount - 1)) * 100;
+  $progressBar
+    .css("background-size", calc + "% 100%")
+    .attr("aria-valuenow", calc);
+  $progressBarLabel.text(calc.toFixed(0) + "% completed");
+});
+
+// Initialize Slick Slider
+$slider.slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  speed: 200,
+  arrows: false,
+  dots: false,
+  draggable: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
       },
-      {
-        breakpoint: 490,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+    },
+    {
+      breakpoint: 490,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
       },
-    ],
-  });
+    },
+  ],
+});
+
+// Refresh AOS after Slick initialization to fix animation issues
+$slider.on("setPosition", function () {
+  AOS.refresh();
 });

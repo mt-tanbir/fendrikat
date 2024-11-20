@@ -20,7 +20,7 @@
     <!-- Slick Slider -->
     <link rel="stylesheet" href="assets/css/slick.css">
     <!-- AOS CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
+    <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive CSS -->
@@ -89,7 +89,7 @@
         <div class="hero-area-1">
             <img class="hero-bg-1" src="assets/images/hero-bg-03.png" alt="Hero Bg">
             <div class="container">
-                <div class="fe-hero-content-3 fe-section-title">
+                <div class="fe-hero-content-3 fe-section-title" data-aos="zoom-in">
                     <h2 class="mb-3">About Me</h2>
                     <div class="fe-menu">
                         <a href="index.html" class="menu-name">Home</a>
@@ -105,17 +105,17 @@
 
 
     <!-- Growth Section Start -->
-    <div id="fe-growth-2" class="fe-growth-2 section">
+    <div id="fe-growth-2" class="fe-growth-2 section overflow-x-hidden">
         <div class="fe-growrh-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <!--Mobile Responsive Title -->
-                        <div class="fe-section-title">
+                        <div class="fe-section-title" data-aos="fade-right">
                             <h3 class="mb-3 d-block d-lg-none">Experienced IT Consultant Driving Digital Transformation
                             </h3>
                         </div>
-                        <div class="fe-growth-img-box">
+                        <div class="fe-growth-img-box" data-aos="zoom-in">
                             <div class="img-box">
                                 <img class="img-1" src="assets/images/growth-rectangle-bg.png"
                                     alt="Rectangle Background">
@@ -123,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center">
+                    <div class="col-lg-6 d-flex align-items-center" data-aos="fade-left">
                         <div class="fe-section-title">
                             <h3 class="mb-3 d-none d-lg-block">Experienced IT Consultant Driving Digital Transformation
                             </h3>
@@ -150,11 +150,11 @@
 
 
     <!-- Services Section Start -->
-    <div id="fe-services" class="fe-services section">
+    <div id="fe-services" class="fe-services section overflow-x-hidden">
         <div class="fe-services-area">
             <div class="container">
                 <div class="d-flex justify-content-center">
-                    <div class="fe-services-info fe-section-title">
+                    <div class="fe-services-info fe-section-title" data-aos="fade-down">
                         <h3 class="mb-4">My Professional Expertise and Approach to Client Success</h3>
                         <p class="fe-content-text-1">With a wealth of expertise and a unique approach focused on client
                             success, I bring a blend of technical knowledge, innovative thinking, and personalized
@@ -163,7 +163,7 @@
                 </div>
                 <div class="row">
                     <!-- Single Services -->
-                    <div class="col-md-6 col-xl-4 mb-6">
+                    <div class="col-md-6 col-xl-4 mb-6" data-aos="fade-right">
                         <div class="fe-single-services-box-2 fe-section-title">
                             <div class="icon-box-2">
                                 <img src="assets/images/icons/crm.svg" alt="icon">
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                     <!-- Single Services -->
-                    <div class="col-md-6 col-xl-4 mb-6">
+                    <div class="col-md-6 col-xl-4 mb-6" data-aos="fade-up">
                         <div class="fe-single-services-box-2 fe-section-title">
                             <div class="icon-box-2">
                                 <img src="assets/images/icons/data-security.svg" alt="icon">
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                     <!-- Single Services -->
-                    <div class="col-md-6 col-xl-4 mb-6">
+                    <div class="col-md-6 col-xl-4 mb-6" data-aos="fade-left">
                         <div class="fe-single-services-box-2 fe-section-title">
                             <div class="icon-box-2">
                                 <img src="assets/images/icons/cloud-solution.svg" alt="icon">
@@ -204,16 +204,32 @@
 
 
     <!-- Guided Success Section Start -->
-    <div id="fe-guided-success" class="fe-guided-success section">
+    <div id="fe-guided-success" class="fe-guided-success section overflow-x-hidden">
         <div class="fe-guided-success-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="fe-guided-success-info-box fe-section-title">
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="fe-guided-success-info-box fe-section-title" data-aos="fade-right">
                             <h3 class="mb-3">Guided Success Consulting for Your Business’s Next Level</h3>
                             <p class="fe-content-text-1">Our consulting services are designed to propel your business to
                                 new heights. We work alongside you, offering tailored insights and solutions that align
                                 with your goals and challenges</p>
+
+                            <div class="fe-guided-success-img d-block d-lg-none">
+                                <!-- Star Icon -->
+                                <div class="star-icon-1"><img src="assets/images/icons/star-01.png" alt="Star"></div>
+                                <div class="star-icon-2"><img src="assets/images/icons/star-02.png" alt="Star"></div>
+
+                                <!-- Front Image -->
+                                <div class="front-image">
+                                    <img src="assets/images/guided-success.png" alt="Image">
+                                </div>
+
+                                <!-- Back Image -->
+                                <div class="back-image">
+                                    <img src="assets/images/guided-success-02.png" alt="Image">
+                                </div>
+                            </div>
                             <hr class="hr-line">
                             <h4 class="mb-2">Strategic Clarity and Direction</h4>
                             <p class="fe-content-text-1 mb-4">Guided Success consulting provides you with a clear
@@ -227,8 +243,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-6 fe-guided-success-img-box">
-                        <div class="fe-guided-success-img">
+                    <div class="col-lg-5 col-xl-6 fe-guided-success-img-box d-none d-lg-block">
+                        <div class="fe-guided-success-img" data-aos="fade-left">
                             <!-- Star Icon -->
                             <div class="star-icon-1"><img src="assets/images/icons/star-01.png" alt="Star"></div>
                             <div class="star-icon-2"><img src="assets/images/icons/star-02.png" alt="Star"></div>
@@ -261,21 +277,21 @@
                         <div class="fe-contact-info-box fe-section-title">
                             <h3 class="mb-3">Get In Touch</h3>
                             <p class="fe-content-text-1 mb-10">Let's start the conversation!</p>
-                            <div class="single-contact mb-12">
+                            <div class="single-contact mb-12" data-aos="fade-right">
                                 <div class="icon-box bg-1"><i class="fa-solid fa-envelope icon"></i></div>
                                 <div>
                                     <h5 class="mb-2">Email Address</h5>
                                     <p class="fe-content-text-1">example123@gmail.com</p>
                                 </div>
                             </div>
-                            <div class="single-contact mb-12">
+                            <div class="single-contact mb-12" data-aos="fade-right">
                                 <div class="icon-box bg-2"><i class="fa-solid fa-phone icon"></i></div>
                                 <div>
                                     <h5 class="mb-2">Phone Number</h5>
                                     <p class="fe-content-text-1">123 456 7890</p>
                                 </div>
                             </div>
-                            <div class="single-contact mb-12">
+                            <div class="single-contact mb-12" data-aos="fade-right">
                                 <div class="icon-box bg-3"><i class="fa-solid fa-location-dot icon"></i></div>
                                 <div>
                                     <h5 class="mb-2">Location</h5>
@@ -284,7 +300,7 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="col-lg-8">
                         <form class="fe-contact-form-box">
                             <div class="row">
@@ -402,7 +418,7 @@
     <!-- Slick Slider -->
     <script src="assets/js/slick.min.js"></script>
     <!-- AOS Js -->
-    <!-- <script src="assets/js/aos.js"></script> -->
+    <script src="assets/js/aos.js"></script>
     <!-- Font Awesome -->
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/fontawesome.min.js"></script>
